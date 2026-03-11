@@ -5,8 +5,8 @@ A simple Flutter application that fetches user data from a REST API and displays
 ## Screenshots
 
 <p align="center">
-  <img width="384" src="https://github.com/user-attachments/assets/07a69231-e674-4be2-84cd-bff739acd43d" alt="Home Screen" />
-  <img width="384" src="https://github.com/user-attachments/assets/1c12a847-c722-4ed2-b149-6d41addbbf33" alt="Detail Screen" />
+  <img width="184" src="https://github.com/user-attachments/assets/07a69231-e674-4be2-84cd-bff739acd43d" alt="Home Screen" />
+  <img width="184" src="https://github.com/user-attachments/assets/1c12a847-c722-4ed2-b149-6d41addbbf33" alt="Detail Screen" />
 </p>
 
 
