@@ -31,6 +31,11 @@ class _UserListScreenState extends State<UserListScreen> {
     try {
       final response = await http.get(
         Uri.parse('https://jsonplaceholder.typicode.com/users'),
+        headers: {
+          'Content-Type': 'application/json',
+          'Accept': 'application/json',
+          'User-Agent': 'FlutterApp/1.0',
+        },
       );
 
       if (response.statusCode == 200) {
@@ -61,7 +66,6 @@ class _UserListScreenState extends State<UserListScreen> {
         appBar: AppBar(
           title: const Text('Users'),
           centerTitle: true,
-          backgroundColor: Theme.of(context).colorScheme.primaryContainer,
         ),
         body: _userLongList(),
       ),
