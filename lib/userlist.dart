@@ -63,10 +63,7 @@ class _UserListScreenState extends State<UserListScreen> {
     return PopScope(
       canPop: false,
       child: Scaffold(
-        appBar: AppBar(
-          title: const Text('Users'),
-          centerTitle: true,
-        ),
+        appBar: AppBar(title: const Text('Users'), centerTitle: true),
         body: _userLongList(),
       ),
     );
