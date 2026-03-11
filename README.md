@@ -38,4 +38,4 @@ A simple Flutter application that fetches user data from a REST API and displays
   <img width="184" src="https://github.com/user-attachments/assets/1c12a847-c722-4ed2-b149-6d41addbbf33" alt="Detail Screen" />
   <img width="184" src="https://github.com/user-attachments/assets/07a69231-e674-4be2-84cd-bff739acd43d" alt="Home Screen" />
 </p>
-[playVideo](https://github.com/user-attachments/assets/558493ad-5de5-4b75-b0fa-db7786c5f7fb)
+[Screen Recording](https://github.com/user-attachments/assets/558493ad-5de5-4b75-b0fa-db7786c5f7fb)
