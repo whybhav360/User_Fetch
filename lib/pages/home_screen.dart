@@ -62,34 +62,37 @@ class _HomeScreenPageState extends State<HomeScreenPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(title: Text("Users"), centerTitle: true),
-      body: ListView.separated(
-        separatorBuilder: (context, index) => const Divider(),
-        itemCount: users.length,
-        itemBuilder: (context, index) {
-          final user = users[index];
-          return ListTile(
-            leading: CircleAvatar(
-              backgroundColor: Colors.cyanAccent,
-              child: Text(user.name.isNotEmpty ? user.name[0] : '?'),
-            ),
-            title: Text(user.name),
-            subtitle: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Text(user.email),
-                Text('Company: ${user.company.name}'),
-              ],
-            ),
-            onTap: () {
-              Navigator.push(
-                context,
-                MaterialPageRoute(
-                  builder: (context) => ContactScreenPage(user: user),
-                ),
-              );
-            },
-          );
-        },
+      body: RefreshIndicator(
+        onRefresh: fetchUsers,
+        child: ListView.separated(
+          separatorBuilder: (context, index) => const Divider(),
+          itemCount: users.length,
+          itemBuilder: (context, index) {
+            final user = users[index];
+            return ListTile(
+              leading: CircleAvatar(
+                backgroundColor: Colors.cyanAccent,
+                child: Text(user.name.isNotEmpty ? user.name[0] : '?'),
+              ),
+              title: Text(user.name),
+              subtitle: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text(user.email),
+                  Text('Company: ${user.company.name}'),
+                ],
+              ),
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => ContactScreenPage(user: user),
+                  ),
+                );
+              },
+            );
+          },
+        ),
       ),
     );
   }
