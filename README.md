@@ -9,6 +9,7 @@ A simple Flutter application that fetches user data from a REST API and displays
   <img width="384" src="https://github.com/user-attachments/assets/1c12a847-c722-4ed2-b149-6d41addbbf33" alt="Detail Screen" />
 </p>
 
+
 ## Setup Instructions
 
 1.  **Clone the repository:**
