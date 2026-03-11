@@ -36,5 +36,7 @@ A simple Flutter application that fetches user data from a REST API and displays
 
 <p align="center">
   <img width="184" src="https://github.com/user-attachments/assets/1c12a847-c722-4ed2-b149-6d41addbbf33" alt="Detail Screen" />
+    ![playVideo](https://github.com/user-attachments/assets/7b64b362-2a3e-4650-a955-e8204c1e2e8c)
+
   <img width="184" src="https://github.com/user-attachments/assets/07a69231-e674-4be2-84cd-bff739acd43d" alt="Home Screen" />
 </p>
